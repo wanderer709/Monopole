@@ -7,8 +7,8 @@ const app = express();
 const port = 3400;
 
 app.use(morgan("combined"));
-app.use(bodyParser.urlencoded({ extended: true }));
-// app.use(bodyParser.json());
+// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 app.use(express.static("public"));
 app.use(cors());
 
